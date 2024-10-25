@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation</title>
+
+    <style>
+        body {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            height: 100vh;
+            font-size: 1.5rem;
+            gap: 20px;
+        }
+
+        h2 {
+            width: 62%;
+            text-align: left;
+            margin: 0;
+        }
+
+        input {
+            font-family: 'Inter', sans-serif;
+            padding: 5px 10px;
+            border-radius: 10px;
+            width: 60%;
+            font-size: 1.15rem;
+            height: 30px;
+        }
+
+        .button_container, .answer_container {
+            width: 60%;
+        }
+
+        button {
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            border-radius: 50px;
+            border: none;
+            background-color: rgb(170, 170, 170);
+            padding: 10px 20px;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        span {
+            font-size: 20px;
+            display: flex;
+            flex-wrap: nowrap;
+            text-wrap: nowrap;
+            margin: 0;
+            height: 50px;
+            font-weight: 600;
+            color: rgb(172, 83, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Enter Password</h2>
+    <input type="password" id="password" placeholder="Enter your password">
+    <button onclick="validatePassword()">Check Password</button>
+    <span id="validationMessage"></span>
+
+    <script>
+        function validatePassword() {
+            const password = document.getElementById('password').value;
+            const message = document.getElementById('validationMessage');
+            const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,15}$/;
+
+            if (regex.test(password)) {
+                message.innerText = "Password is valid.";
+                message.style.color = "green";
+            } else {
+                message.innerText = "Password is invalid. Ensure it is at least 8 characters long, contains one uppercase letter, one lowercase letter, one digit, and one special character.";
+                message.style.color = "red";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursive functions</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <h2>Problem Statement 5</h2>
+
+    <button id="movingButton">Click me</button>
+
+    <script>
+        let moveRight = true;  // Direction of movement
+        let moving = false;    // Whether the button is moving
+        let intervalId;
+
+        function move() {
+            const button = document.getElementById('movingButton');
+            let left = parseInt(window.getComputedStyle(button).left) || 0;
+
+            if (moveRight) {
+                left++;
+            } else {
+                left--;
+            }
+
+            button.style.left = left + 'px';
+
+            if (left >= 500) {  
+                moveRight = false;
+            } else if (left <= 0) { 
+                moveRight = true;
+            }
+
+            if (moving) {
+                intervalId = requestAnimationFrame(move);
+            }
+        }
+
+        document.getElementById('movingButton').addEventListener('click', () => {
+            if (moving) {
+                cancelAnimationFrame(intervalId);
+            } else {
+                intervalId = requestAnimationFrame(move);
+            }
+            moving = !moving;
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Web Development Course</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="cover"></div>
+        <h1 class="main-heading">Introduction to Web Development Course</h1>
+        <p class="sub-heading">Unlock the potential of web development and embark on a journey to create stunning,
+            functional websites.</p>
+        <nav class="nav">
+            <ul class="nav__menu">
+                <li><a href="#about">About the Course</a></li>
+                <li><a href="#outline">Course Outline</a></li>
+                <li><a href="#instructors">Instructors</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section id="about" class="about">
+        <h2>About the Course</h2>
+        <p>This comprehensive web development course is designed to equip you with the skills and knowledge needed to
+            build modern, responsive websites. Whether you are a beginner or looking to enhance your existing skills,
+            this course covers everything from the basics of HTML and CSS to advanced JavaScript and responsive design
+            techniques. Our hands-on approach ensures that you will be able to apply what you learn through real-world
+            projects. By the end of the course, you will have a solid foundation in web development and be ready to
+            create your own professional websites. This course is ideal for aspiring web developers, designers, and
+            anyone interested in creating their own websites.</p>
+    </section>
+
+    <section id="outline" class="outline">
+        <h2>Course Outline</h2>
+        <ol class="course-outline">
+            <li><i class="fas fa-check-circle"></i> Introduction to HTML</li>
+            <li><i class="fas fa-check-circle"></i> Introduction to CSS</li>
+            <li><i class="fas fa-check-circle"></i> Introduction to JavaScript</li>
+            <li><i class="fas fa-check-circle"></i> Responsive Web Design</li>
+            <li><i class="fas fa-check-circle"></i> Web Development Tools</li>
+            <li><i class="fas fa-check-circle"></i> Project: Build a Personal Website</li>
+        </ol>
+        <button data-aos="zoom-in" id="revealButton">Show More</button>
+        <div id="additionalContent" class="hidden">
+            <p>More details about each module will be provided during the course.</p>
+        </div>
+    </section>
+
+    <section id="instructors" class="instructors">
+        <h2>Instructors</h2>
+        <div class="instructor-container">
+            <div class="instructor-card">
+                <img src="instructor.ico" alt="Instructor 1">
+                <h3>Sharaneshwar Punjal</h3>
+                <p>He is a seasoned web developer with over 10 years of experience. He specializes in frontend
+                    development and has a passion for teaching.</p>
+            </div>
+            <div class="instructor-card">
+                <img src="instructor.ico" alt="Instructor 2">
+                <h3>John Wick</h3>
+                <p>John is a full-stack developer who has worked on numerous projects across various industries. She
+                    enjoys sharing her knowledge with others.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Web Development Course. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        document.getElementById('revealButton').addEventListener('click', function () {
+            document.getElementById('additionalContent').classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

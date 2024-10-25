@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation with JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Problem Statement 3</h2>
+    <div class="container">
+    <div id="red" class="circle"></div>
+    <div id="green" class="circle"></div>
+</div>
+    <button id="clickme">Click me</button>
+
+    <script>
+        function removeRedCircle() {
+            const redCircle = document.getElementById('red');
+            if (redCircle) redCircle.remove();
+        }
+
+        document.getElementById('clickme').addEventListener('click', removeRedCircle);
+    </script>
+</body>
+
+</html>

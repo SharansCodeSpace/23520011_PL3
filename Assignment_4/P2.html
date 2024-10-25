@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and User Interactions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Problem Statement 2</h2>
+    <div id="wrapper">
+        <input type="text" value="" readonly />
+        <button type="button">Click Me</button>
+    </div>
+    <br><br>
+
+    <div id="element" class="circle">
+        Hover Me
+    </div>
+
+    <div id="element2" class="circle">
+        Hover Me
+    </div>
+
+    <script>
+        const button = document.querySelector('button');
+        const input = document.querySelector('input');
+
+        const handleClick = () => {
+            input.value = 'Hello World';
+        }
+
+        button.addEventListener('click', handleClick);
+
+        const element = document.getElementById('element');
+
+        const changeText = () => {
+            element.innerText = 'Thanks!';
+        }
+
+        const originalText = () => {
+            element.innerText = 'Hover Me';
+        }
+
+        element.addEventListener('mouseover', changeText);
+        element.addEventListener('mouseout', originalText);
+
+        const element2 = document.querySelector('#element2');
+
+        const toggleColor = (isEntering) => {
+            element2.style.backgroundColor = isEntering ? 'orange' : 'black';
+        }
+
+        element2.addEventListener('mouseover', () => toggleColor(true));
+        element2.addEventListener('mouseout', () => toggleColor(false));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,604 @@
+{
+    "people": [
+        {
+            "id": "1",
+            "name": "Luke Skywalker",
+            "height": "172",
+            "mass": "77",
+            "birth_year": "19BBY",
+            "created": "2014-12-09T13:50:51.644000Z",
+            "films": 5,
+            "homeworld": {
+                "name": "Tatooine",
+                "terrain": "desert",
+                "climate": "arid",
+                "residents": 200000
+            }
+        },
+        {
+            "id": "2",
+            "name": "Leia Organa",
+            "height": "150",
+            "mass": "49",
+            "birth_year": "19BBY",
+            "created": "2014-12-10T15:20:09.791000Z",
+            "films": 4,
+            "homeworld": {
+                "name": "Alderaan",
+                "terrain": "grasslands, mountains",
+                "climate": "temperate",
+                "residents": 2000000
+            }
+        },
+        {
+            "id": "3",
+            "name": "Han Solo",
+            "height": "180",
+            "mass": "80",
+            "birth_year": "29BBY",
+            "created": "2014-12-10T15:23:49.839000Z",
+            "films": 4,
+            "homeworld": {
+                "name": "Corellia",
+                "terrain": "urban, forest, mountains",
+                "climate": "temperate",
+                "residents": 4000000
+            }
+        },
+        {
+            "id": "4",
+            "name": "Darth Vader",
+            "height": "202",
+            "mass": "136",
+            "birth_year": "41.9BBY",
+            "created": "2014-12-10T15:18:20.704000Z",
+            "films": 4,
+            "homeworld": {
+                "name": "Tatooine",
+                "terrain": "desert",
+                "climate": "arid",
+                "residents": 200000
+            }
+        },
+        {
+            "id": "5",
+            "name": "Yoda",
+            "height": "66",
+            "mass": "17",
+            "birth_year": "896BBY",
+            "created": "2014-12-15T12:26:01.042000Z",
+            "films": 4,
+            "homeworld": {
+                "name": "Unknown",
+                "terrain": "swamp, jungles",
+                "climate": "temperate",
+                "residents": "Unknown"
+            }
+        },
+        {
+            "id": "6",
+            "name": "Obi-Wan Kenobi",
+            "height": "182",
+            "mass": "77",
+            "birth_year": "57BBY",
+            "created": "2014-12-10T16:16:29.192000Z",
+            "films": 5,
+            "homeworld": {
+                "name": "Stewjon",
+                "terrain": "plains, mountains",
+                "climate": "temperate",
+                "residents": 1000000
+            }
+        },
+        {
+            "id": "7",
+            "name": "Emperor Palpatine",
+            "height": "170",
+            "mass": "75",
+            "birth_year": "82BBY",
+            "created": "2014-12-15T12:48:05.971000Z",
+            "films": 5,
+            "homeworld": {
+                "name": "Naboo",
+                "terrain": "grassy hills, swamps, forests, mountains",
+                "climate": "temperate",
+                "residents": 4500000
+            }
+        },
+        {
+            "id": "8",
+            "name": "Chewbacca",
+            "height": "228",
+            "mass": "112",
+            "birth_year": "200BBY",
+            "created": "2014-12-10T16:42:45.066000Z",
+            "films": 4,
+            "homeworld": {
+                "name": "Kashyyyk",
+                "terrain": "forests, mountains, lakes",
+                "climate": "tropical",
+                "residents": 450000
+            }
+        },
+        {
+            "id": "9",
+            "name": "R2-D2",
+            "height": "96",
+            "mass": "32",
+            "birth_year": "33BBY",
+            "created": "2014-12-10T15:11:50.376000Z",
+            "films": 6,
+            "homeworld": {
+                "name": "Naboo",
+                "terrain": "grassy hills, swamps, forests, mountains",
+                "climate": "temperate",
+                "residents": 4500000
+            }
+        },
+        {
+            "id": "10",
+            "name": "C-3PO",
+            "height": "167",
+            "mass": "75",
+            "birth_year": "112BBY",
+            "created": "2014-12-10T15:10:51.357000Z",
+            "films": 6,
+            "homeworld": {
+                "name": "Tatooine",
+                "terrain": "desert",
+                "climate": "arid",
+                "residents": 200000
+            }
+        },
+        {
+            "id": "11",
+            "name": "Lando Calrissian",
+            "height": "177",
+            "mass": "79",
+            "birth_year": "31BBY",
+            "created": "2014-12-15T12:46:22.471000Z",
+            "films": 3,
+            "homeworld": {
+                "name": "Socorro",
+                "terrain": "desert",
+                "climate": "arid",
+                "residents": 500000
+            }
+        },
+        {
+            "id": "12",
+            "name": "Jabba the Hutt",
+            "height": "1000",
+            "mass": "1500",
+            "birth_year": "600BBY",
+            "created": "2014-12-15T12:53:35.578000Z",
+            "films": 6,
+            "homeworld": {
+                "name": "Tatooine",
+                "terrain": "desert",
+                "climate": "arid",
+                "residents": 200000
+            }
+        },
+        {
+            "id": "13",
+            "name": "Qui-Gon Jinn",
+            "height": "193",
+            "mass": "89",
+            "birth_year": "80BBY",
+            "created": "2014-12-15T13:20:14.360000Z",
+            "films": 1,
+            "homeworld": {
+                "name": "Coruscant",
+                "terrain": "urban",
+                "climate": "temperate",
+                "residents": 1000000000
+            }
+        },
+        {
+            "id": "14",
+            "name": "Mace Windu",
+            "height": "188",
+            "mass": "84",
+            "birth_year": "72BBY",
+            "created": "2014-12-15T13:45:07.128000Z",
+            "films": 3,
+            "homeworld": {
+                "name": "Haruun Kal",
+                "terrain": "jungle",
+                "climate": "tropical",
+                "residents": 1000000
+            }
+        },
+        {
+            "id": "15",
+            "name": "Padmé Amidala",
+            "height": "165",
+            "mass": "45",
+            "birth_year": "46BBY",
+            "created": "2014-12-15T13:57:57.782000Z",
+            "films": 3,
+            "homeworld": {
+                "name": "Naboo",
+                "terrain": "grassy hills, swamps",
+                "climate": "temperate",
+                "residents": 2000000
+            }
+        },
+        {
+            "id": "16",
+            "name": "Count Dooku",
+            "height": "183",
+            "mass": "80",
+            "birth_year": "102BBY",
+            "created": "2014-12-15T14:12:24.155000Z",
+            "films": 2,
+            "homeworld": {
+                "name": "Serrano",
+                "terrain": "grassy plains",
+                "climate": "temperate",
+                "residents": 1000000
+            }
+        },
+        {
+            "id": "17",
+            "name": "General Grievous",
+            "height": "216",
+            "mass": "180",
+            "birth_year": "unknown",
+            "created": "2014-12-15T14:22:25.832000Z",
+            "films": 3,
+            "homeworld": {
+                "name": "Kaleesh",
+                "terrain": "desert",
+                "climate": "arid",
+                "residents": 2000000
+            }
+        },
+        {
+            "id": "18",
+            "name": "Boba Fett",
+            "height": "183",
+            "mass": "78",
+            "birth_year": "31BBY",
+            "created": "2014-12-15T14:25:12.673000Z",
+            "films": 3,
+            "homeworld": {
+                "name": "Kamino",
+                "terrain": "ocean",
+                "climate": "stormy",
+                "residents": 1000000
+            }
+        },
+        {
+            "id": "19",
+            "name": "Jango Fett",
+            "height": "183",
+            "mass": "79",
+            "birth_year": "66BBY",
+            "created": "2014-12-15T14:28:45.542000Z",
+            "films": 2,
+            "homeworld": {
+                "name": "Kamino",
+                "terrain": "ocean",
+                "climate": "stormy",
+                "residents": 1000000
+            }
+        },
+        {
+            "id": "20",
+            "name": "Bossk",
+            "height": "190",
+            "mass": "113",
+            "birth_year": "53BBY",
+            "created": "2014-12-15T14:32:45.539000Z",
+            "films": 2,
+            "homeworld": {
+                "name": "Trandosha",
+                "terrain": "swamp",
+                "climate": "tropical",
+                "residents": 3000000
+            }
+        },
+        {
+            "id": "21",
+            "name": "Dengar",
+            "height": "178",
+            "mass": "92",
+            "birth_year": "unknown",
+            "created": "2014-12-15T14:36:22.044000Z",
+            "films": 2,
+            "homeworld": {
+                "name": "Unknown",
+                "terrain": "desert",
+                "climate": "arid",
+                "residents": "Unknown"
+            }
+        },
+        {
+            "id": "22",
+            "name": "4-LOM",
+            "height": "190",
+            "mass": "89",
+            "birth_year": "unknown",
+            "created": "2014-12-15T14:39:01.851000Z",
+            "films": 1,
+            "homeworld": {
+                "name": "Unknown",
+                "terrain": "metallic",
+                "climate": "unknown",
+                "residents": "Unknown"
+            }
+        },
+        {
+            "id": "23",
+            "name": "Zuckuss",
+            "height": "170",
+            "mass": "45",
+            "birth_year": "unknown",
+            "created": "2014-12-15T14:41:26.789000Z",
+            "films": 1,
+            "homeworld": {
+                "name": "Gossam",
+                "terrain": "plains",
+                "climate": "tropical",
+                "residents": 2000000
+            }
+        },
+        {
+            "id": "24",
+            "name": "Lobot",
+            "height": "175",
+            "mass": "77",
+            "birth_year": "unknown",
+            "created": "2014-12-15T14:44:23.419000Z",
+            "films": 1,
+            "homeworld": {
+                "name": "Bespin",
+                "terrain": "cloud city",
+                "climate": "artificial",
+                "residents": 500000
+            }
+        },
+        {
+            "id": "25",
+            "name": "Wicket W. Warrick",
+            "height": "88",
+            "mass": "20",
+            "birth_year": "unknown",
+            "created": "2014-12-15T14:48:16.826000Z",
+            "films": 1,
+            "homeworld": {
+                "name": "Endor",
+                "terrain": "forest moon",
+                "climate": "temperate",
+                "residents": 1000000
+            }
+        },
+        {
+            "id": "26",
+            "name": "Nien Nunb",
+            "height": "170",
+            "mass": "unknown",
+            "birth_year": "unknown",
+            "created": "2014-12-15T14:51:54.660000Z",
+            "films": 2,
+            "homeworld": {
+                "name": "Sullust",
+                "terrain": "volcanic",
+                "climate": "hot",
+                "residents": 5000000
+            }
+        },
+        {
+            "id": "27",
+            "name": "Aayla Secura",
+            "height": "170",
+            "mass": "50",
+            "birth_year": "unknown",
+            "created": "2014-12-15T14:54:12.875000Z",
+            "films": 2,
+            "homeworld": {
+                "name": "Ryloth",
+                "terrain": "desert, rocky",
+                "climate": "hot",
+                "residents": 1500000
+            }
+        },
+        {
+            "id": "28",
+            "name": "Barriss Offee",
+            "height": "162",
+            "mass": "unknown",
+            "birth_year": "unknown",
+            "created": "2014-12-15T14:56:38.274000Z",
+            "films": 1,
+            "homeworld": {
+                "name": "Ryloth",
+                "terrain": "desert, rocky",
+                "climate": "hot",
+                "residents": 1500000
+            }
+        },
+        {
+            "id": "29",
+            "name": "Luminara Unduli",
+            "height": "174",
+            "mass": "unknown",
+            "birth_year": "unknown",
+            "created": "2014-12-15T14:59:01.781000Z",
+            "films": 2,
+            "homeworld": {
+                "name": "Mirial",
+                "terrain": "desert, plains",
+                "climate": "hot",
+                "residents": 500000
+            }
+        },
+        {
+            "id": "30",
+            "name": "Mace Windu",
+            "height": "188",
+            "mass": "84",
+            "birth_year": "72BBY",
+            "created": "2014-12-15T13:45:07.128000Z",
+            "films": 3,
+            "homeworld": {
+                "name": "Haruun Kal",
+                "terrain": "jungle",
+                "climate": "tropical",
+                "residents": 1000000
+            }
+        },
+        {
+            "id": "31",
+            "name": "Qui-Gon Jinn",
+            "height": "193",
+            "mass": "89",
+            "birth_year": "92BBY",
+            "created": "2014-12-15T14:03:30.920000Z",
+            "films": 2,
+            "homeworld": {
+                "name": "Coruscant",
+                "terrain": "urban",
+                "climate": "temperate",
+                "residents": 10000000
+            }
+        },
+        {
+            "id": "32",
+            "name": "Obi-Wan Kenobi",
+            "height": "182",
+            "mass": "77",
+            "birth_year": "57BBY",
+            "created": "2014-12-15T14:07:23.577000Z",
+            "films": 5,
+            "homeworld": {
+                "name": "Stewjon",
+                "terrain": "plains",
+                "climate": "temperate",
+                "residents": 200000
+            }
+        },
+        {
+            "id": "33",
+            "name": "Yoda",
+            "height": "66",
+            "mass": "17",
+            "birth_year": "896BBY",
+            "created": "2014-12-15T14:10:47.790000Z",
+            "films": 6,
+            "homeworld": {
+                "name": "Dagobah",
+                "terrain": "swamp",
+                "climate": "humid",
+                "residents": 500
+            }
+        },
+        {
+            "id": "34",
+            "name": "Darth Maul",
+            "height": "175",
+            "mass": "80",
+            "birth_year": "54BBY",
+            "created": "2014-12-15T14:12:32.843000Z",
+            "films": 2,
+            "homeworld": {
+                "name": "Dathomir",
+                "terrain": "swamp",
+                "climate": "hot",
+                "residents": 500000
+            }
+        },
+        {
+            "id": "35",
+            "name": "Count Dooku",
+            "height": "193",
+            "mass": "80",
+            "birth_year": "102BBY",
+            "created": "2014-12-15T14:15:25.651000Z",
+            "films": 3,
+            "homeworld": {
+                "name": "Serreno",
+                "terrain": "plains",
+                "climate": "temperate",
+                "residents": 3000000
+            }
+        },
+        {
+            "id": "36",
+            "name": "General Grievous",
+            "height": "216",
+            "mass": "159",
+            "birth_year": "unknown",
+            "created": "2014-12-15T14:18:37.941000Z",
+            "films": 3,
+            "homeworld": {
+                "name": "Kaleesh",
+                "terrain": "rocky",
+                "climate": "hot",
+                "residents": 1000000
+            }
+        },
+        {
+            "id": "37",
+            "name": "Padmé Amidala",
+            "height": "160",
+            "mass": "45",
+            "birth_year": "46BBY",
+            "created": "2014-12-15T14:21:43.345000Z",
+            "films": 3,
+            "homeworld": {
+                "name": "Naboo",
+                "terrain": "plains",
+                "climate": "temperate",
+                "residents": 3000000
+            }
+        },
+        {
+            "id": "38",
+            "name": "Anakin Skywalker",
+            "height": "188",
+            "mass": "84",
+            "birth_year": "41BBY",
+            "created": "2014-12-15T14:24:29.558000Z",
+            "films": 6,
+            "homeworld": {
+                "name": "Tatooine",
+                "terrain": "desert",
+                "climate": "hot",
+                "residents": 200000
+            }
+        },
+        {
+            "id": "39",
+            "name": "Han Solo",
+            "height": "180",
+            "mass": "80",
+            "birth_year": "29BBY",
+            "created": "2014-12-15T14:27:16.080000Z",
+            "films": 5,
+            "homeworld": {
+                "name": "Corellia",
+                "terrain": "urban",
+                "climate": "temperate",
+                "residents": 5000000
+            }
+        },
+        {
+            "id": "40",
+            "name": "Leia Organa",
+            "height": "150",
+            "mass": "49",
+            "birth_year": "19BBY",
+            "created": "2014-12-15T14:30:18.757000Z",
+            "films": 6,
+            "homeworld": {
+                "name": "Alderaan",
+                "terrain": "plains",
+                "climate": "temperate",
+                "residents": 2000000
+            }
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+.character-card {
+    border: 1px solid var(--primary-color);
+    background-color: #58556067;
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    min-width: 250px;
+    height: 400px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    display: flex;
+    gap: 20px;
+}
+
+.character-card .cover {
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.character-card:active {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.character-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.character-card h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+}

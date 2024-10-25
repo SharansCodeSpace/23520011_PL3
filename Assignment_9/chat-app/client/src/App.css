@@ -1,0 +1,241 @@
+/* General Styles */
+
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(28, 28, 28);
+  color: white;
+  font-family: "TT Interphases Pro", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-behavior: smooth;
+}
+
+.message-container::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+
+/* Join Chat Container */
+.joinChatContainer {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: rgb(57, 57, 57);
+  width: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.joinChatContainer h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  margin-top: 0;
+  color: white;
+}
+
+.joinChatContainer label {
+  width: 95%;
+  text-align: left;
+}
+
+.joinChatContainer input {
+  width: 90%;
+  height: 45px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0 1rem;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  font-family: "TT Interphases Pro", sans-serif;
+}
+
+.joinChatContainer input:focus {
+  border-color: #e5aaff;
+  outline: none;
+}
+
+.joinChatContainer button {
+  width: 95%;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 50px;
+  background-color: #e5aaff;
+  border: 2px solid #e5aaff;
+  color: black;
+  font-size: 16px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "TT Interphases Pro", sans-serif;
+  font-weight: 500;
+}
+
+.joinChatContainer button:hover {
+  background-color: transparent;
+  color: #e5aaff;
+}
+
+/* Chat Window */
+.chat-window {
+  width: 400px;
+  height: 500px;
+  background-color: rgb(57, 57, 57);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chat-window p {
+  margin: 0;
+}
+
+.chat-window .chat-header {
+  height: 50px;
+  background-color: rgb(57, 57, 57);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-window .chat-header p {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.chat-window .chat-body {
+  flex: 1;
+  background-color: rgb(57, 57, 57);
+  padding: 1rem;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.chat-window .chat-body::-webkit-scrollbar {
+  display: none;
+}
+
+.chat-window .chat-body .message-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.chat-window .chat-body .message {
+  display: flex;
+}
+
+.message.you {
+  background-color: #70218b;
+  /* Blue for the sender */
+  color: black;
+  align-self: flex-end;
+  /* Align to the right */
+  border-radius: 10px 10px 0 10px;
+  /* Rounded corners */
+}
+
+.message-body {
+  padding: 10px;
+}
+
+.message.other {
+  background-color: #500e73;
+  /* Light gray for the receiver */
+  color: black !important;
+  align-self: flex-start;
+  /* Align to the left */
+  border-radius: 10px 10px 10px 0;
+  /* Rounded corners */
+}
+
+.message-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 12px;
+}
+
+.chat-window .chat-body .message .message-content {
+  max-width: 200px;
+  /* padding: 0.75rem; */
+  border-radius: 8px;
+  /* background-color: #43a047; */
+  color: white;
+  word-break: break-word;
+}
+
+.chat-window .chat-body .message-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: white;
+  margin-top: 5px;
+}
+
+.chat-window .chat-footer {
+  display: flex;
+  gap: 10px;
+  border-top: 1px solid rgb(57, 57, 57);
+  padding: 0.75rem;
+  background-color: rgb(57, 57, 57);
+}
+
+.chat-window .chat-footer input {
+  flex: 1;
+  border: 2px solid #e5aaff;
+  padding: 0.5rem;
+  color: white;
+  border-radius: 6px;
+  background-color: rgb(57, 57, 57);
+  font-size: 14px;
+  font-family: "TT Interphases Pro", sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+.chat-window .chat-footer input:focus {
+  border-color: #e5aaff;
+  outline: none;
+}
+
+.chat-window .chat-footer button {
+  background-color: #e5aaff;
+  border: 2px solid #e5aaff;
+  font-family: "TT Interphases Pro", sans-serif;
+  color: black;
+  border-radius: 10px;
+  padding: 0 1rem;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.chat-window .chat-footer button:hover {
+  background-color: transparent;
+  color: #e5aaff;
+}
+
+/* Hide scrollbar */
+.chat-window .chat-body .message-container::-webkit-scrollbar {
+  display: none;
+}

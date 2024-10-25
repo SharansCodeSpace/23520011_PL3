@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --primary-color: #eee6ff;
+    --primary-dark-color: hsl(259, 100%, 84%);
+    --background-color: #27252b;
+    --font-family: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: var(--font-family);
+    /* background: rgba(0, 0, 0, 0.5), url('assets/image.png') no-repeat center center fixed; */
+    /* background-size: cover;
+     */
+    background: transparent;
+    overflow: hidden;
+    color: white;
+    padding: 30px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 120%;
+    height: 120%;
+    margin: auto;
+    background: url('image.png') no-repeat center center/cover;
+    background-size: cover;
+    filter: blur(2px) brightness(25%);
+    z-index: -1;
+}
+
+.app-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+
+h1 {
+    font-size: 3.5rem;
+    background: linear-gradient(270deg, #eee6ff 50%, rgb(118, 110, 137));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
